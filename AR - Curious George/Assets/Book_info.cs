@@ -22,17 +22,14 @@ public class Book_info : MonoBehaviour, IVirtualButtonEventHandler, ITrackableEv
         {
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
         } 
+
+
         vbObj = GameObject.Find("lacy_button");
         vbObj.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
         cubeAni.GetComponent<Animator>();
     }
 
 
-    public void OnBecameVisible()
-    {
-        
-            musicSource.Play();
-    }
     // Update is called once per frame
     void Update()
     {
@@ -43,12 +40,13 @@ public class Book_info : MonoBehaviour, IVirtualButtonEventHandler, ITrackableEv
     {
         cubeAni.Play("Cube");
         Debug.Log("Button presses");
-        throw new System.NotImplementedException();
+          //  throw new System.NotImplementedException();
     }
-
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
-        throw new System.NotImplementedException();
+        cubeAni.Play("Cube");
+        Debug.Log("Button presses");
+       // throw new NotImplementedException();
     }
 
 
@@ -73,4 +71,6 @@ public class Book_info : MonoBehaviour, IVirtualButtonEventHandler, ITrackableEv
             musicSource.Stop();
         }
     }
+
+ 
 }
