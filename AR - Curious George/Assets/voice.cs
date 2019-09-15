@@ -12,6 +12,7 @@ public class voice : MonoBehaviour, IVirtualButtonEventHandler
     {
         button = GameObject.Find("lacy_button");
         button.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
+        //cubeAni.GetComponent<Animator>();
 
         person = GameObject.Find("cop");
         person.GetComponent<GameObject>();
