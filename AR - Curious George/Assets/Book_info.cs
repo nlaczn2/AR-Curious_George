@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
-public class Book_info : MonoBehaviour, IVirtualButtonEventHandler, ITrackableEventHandler
+public class Book_info : MonoBehaviour, ITrackableEventHandler
 {
 
-    public GameObject vbObj;
-    public Animator cubeAni;
+   // public GameObject vbObj;
+    //public Animator cubeAni;
 
     public AudioClip musicClip;
     public AudioSource musicSource;
@@ -24,9 +24,9 @@ public class Book_info : MonoBehaviour, IVirtualButtonEventHandler, ITrackableEv
         } 
 
 
-        vbObj = GameObject.Find("lacy_button");
-        vbObj.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
-        cubeAni.GetComponent<Animator>();
+        //vbObj = GameObject.Find("lacy_button");
+        //vbObj.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
+        //cubeAni.GetComponent<Animator>();
     }
 
 
@@ -36,18 +36,18 @@ public class Book_info : MonoBehaviour, IVirtualButtonEventHandler, ITrackableEv
         
     }
 
-    public void OnButtonPressed(VirtualButtonBehaviour vb)
-    {
-        cubeAni.Play("Cube");
-        Debug.Log("Button presses");
-          //  throw new System.NotImplementedException();
-    }
-    public void OnButtonReleased(VirtualButtonBehaviour vb)
-    {
-        cubeAni.Play("Cube");
-        Debug.Log("Button presses");
-       // throw new NotImplementedException();
-    }
+    //public void OnButtonPressed(VirtualButtonBehaviour vb)
+    //{
+    //    cubeAni.Play("Cube");
+    //    Debug.Log("Button presses");
+    //      //  throw new System.NotImplementedException();
+    //}
+    //public void OnButtonReleased(VirtualButtonBehaviour vb)
+    //{
+    //    cubeAni.Play("Cube");
+    //    Debug.Log("Button presses");
+    //   // throw new NotImplementedException();
+    //}
 
 
     public void OnTrackableStateChanged(
