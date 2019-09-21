@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
-public class voice : MonoBehaviour, IVirtualButtonEventHandler
+public class speek : MonoBehaviour, IVirtualButtonEventHandler
 {
     public GameObject button;
     public GameObject person;
@@ -14,7 +14,7 @@ public class voice : MonoBehaviour, IVirtualButtonEventHandler
         button.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
         //cubeAni.GetComponent<Animator>();
 
-        person = GameObject.Find("copP");
+        person = GameObject.Find("cop");
         person.GetComponent<GameObject>();
         person.SetActive(false);
     }
