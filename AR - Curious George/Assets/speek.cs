@@ -18,9 +18,12 @@ public class speek : MonoBehaviour, IVirtualButtonEventHandler
         review = GameObject.Find("review");
         review.GetComponent<GameObject>();
         review.SetActive(false);
+
+        info = GameObject.Find("title");
+        info.GetComponent<GameObject>();
+        info.SetActive(true);
     }
 
-    int flag = 0;
 
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
@@ -41,7 +44,6 @@ public class speek : MonoBehaviour, IVirtualButtonEventHandler
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
         
-
 
     }
 
