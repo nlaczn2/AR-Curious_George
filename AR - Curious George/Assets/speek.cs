@@ -5,28 +5,44 @@ using Vuforia;
 public class speek : MonoBehaviour, IVirtualButtonEventHandler
 {
     public GameObject button;
-    public GameObject person;
+    public GameObject review;
+    public GameObject info;
 
     // Start is called before the first frame update
     void Start()
     {
-        button = GameObject.Find("lacy_button");
+        button = GameObject.Find("lacy_button3");
         button.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
         //cubeAni.GetComponent<Animator>();
 
-        person = GameObject.Find("cop");
-        person.GetComponent<GameObject>();
-        person.SetActive(false);
+        review = GameObject.Find("review");
+        review.GetComponent<GameObject>();
+        review.SetActive(false);
     }
+
+    int flag = 0;
 
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
-        person.SetActive(true);
+        if (review.activeSelf == false)
+        {
+            review.SetActive(true);
+            info.SetActive(false);
+        }
+
+        else if (review.activeSelf == true)
+        {
+            review.SetActive(false);
+            info.SetActive(true);
+        }
+
     }
 
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
-        person.SetActive(false);
+        
+
+
     }
 
 
