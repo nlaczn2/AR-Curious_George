@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="CG_front_cover" size="6.400000 8.101266" />
+    <ImageTarget name="Curious_George_back_cover" size="6.400000 7.937597" />
     <ImageTarget name="CuriousGeorgeBook" size="6.400000 8.042806" />
   </Tracking>
 </QCARConfig>
