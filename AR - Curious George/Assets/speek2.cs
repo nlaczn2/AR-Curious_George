@@ -14,7 +14,7 @@ public class speek2 : MonoBehaviour, IVirtualButtonEventHandler
         button.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
         //cubeAni.GetComponent<Animator>();
 
-        person = GameObject.Find("cop");
+        person = GameObject.Find("cop2");
         person.GetComponent<GameObject>();
         person.SetActive(false);
     }
